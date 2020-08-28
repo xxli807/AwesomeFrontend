@@ -1,8 +1,8 @@
  
-const fs = require('fs');
-const recast = require('recast')
-const path = require('path');
- 
+import * as fs from "fs/promises";
+import * as recast from "recast";
+import * as path from "path"; 
+
 function checkMethodNames() {
     const code = '';
     const ast = recast.parse(code);
