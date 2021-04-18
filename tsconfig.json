@@ -34,7 +34,7 @@
   "include": [
     "src/**/*",
     "test/*"
-  ],
+, "setupTests.ts"  ],
   "exclude": [
     "node_modules"
   ]
