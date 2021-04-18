@@ -18,6 +18,8 @@ async function getAllFiles(directory: string){
         const isDir = await fs.stat(newPath);
         if(isDir.isDirectory()) {
             const subFiles = await getAllFiles(newPath) ;
+
+            
             fileList = [...fileList, ...subFiles];
         }
         else {
